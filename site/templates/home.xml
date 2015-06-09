@@ -9,7 +9,90 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<header>
+
+				<h1><cms:text constant="header_title"/></h1>
+				<span><cms:text constant="licence"/></span>
+				<a
+					href="'tel:'.urlencode(Language::getText('number'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="number"/>
+				</a>
+
+				<div class="form_wrap">
+					<h3><cms:text constant="form_title"/></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+
+				</div>
+
+			</header>
+
+			<div class="about wrap">
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="cetifications_article"
+					template="parts/article.xml"
+					/>
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="about_article"
+					template="parts/article.xml"
+					/>
+
+				<div class="image">
+					<figure></figure>
+					<span><cms:text constant="identifier"/></span>
+				</div>
+
+			</div>
+
+			<div class="benefits wrap">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="benefits_article"
+					template="parts/article_heading.xml"
+					/>
+			</div>
+
+			<div class="discount wrap">
+				<div class="video">
+					<cms:module
+						name="youtube"
+						action="show"
+						text_id="ok_video"
+						template="parts/video.xml"
+						/>
+				</div>
+				<span></span>
+			</div>
+
+			<div class="insects wrap">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="insects_article"
+					template="parts/article_heading.xml"
+					/>
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="german_tikan_article"
+					template="parts/article_heading.xml"
+					/>
+			</div>
+
 		</body>
 	</html>
 </document>
