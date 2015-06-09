@@ -1,0 +1,152 @@
+/**
+ * Header Style Sheet
+ * Pest Control OK
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+ header {
+ 	display: block;
+ 	padding:0px calc((100vw - 1200px) / 2);
+ 	background-image: url(../images/header-background.jpeg);
+ 	background-repeat: no-repeat;
+ 	background-position: center top;
+ 	background-size: 1920px 700px;
+ 	min-height: 700px;
+ 	text-align: right;
+ 	position: relative;
+ }
+
+
+ header h1 {
+ 	display: block;
+ 	font-size: 3.3em;
+ 	font-weight: 900;
+ 	width: 60%;
+ 	position: relative;
+ }
+
+header h1:before {
+	content: "";
+	position: absolute;
+	top: 110%;
+	left: 215px;
+	background-image: url(../images/arrow-green.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 86px 243px;
+	width: 86px;
+	height: 243px;
+}
+
+ header > span {
+ 	display: block;
+ 	margin-bottom: 250px;
+ 	width: 60%;
+ 	font-weight: 400;
+ 	font-size: 1.5em;
+ }
+
+div.form_wrap {
+ 	display: block;
+ 	text-align: center;
+ 	position: absolute;
+ 	bottom:0px;
+ 	left: 0px;
+ 	width: 100%;
+ 	background-color: rgba(0, 0, 0, 0.6);
+ }
+
+ div.form_wrap h3 {
+ 	display: block;
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ 	color:white;
+ }
+
+ form {
+ 	display: block;
+ 	margin-bottom: 20px;
+ }
+
+form label {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+form label:before {
+	content: "";
+	position: absolute;
+	right: -17px;
+	top: 3px;
+	background-image: url(../images/form-icons-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: -14px center;
+	background-size: 200px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+form label:nth-of-type(2):before {
+	background-position: -64px center;
+}
+
+form label:nth-of-type(3):before {
+	background-position: -114px center;
+}
+
+form label:nth-of-type(4):before {
+	background-position: -164px center;
+}
+
+form label input {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 40px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid white;
+	border-left: 1px solid transparent;
+	width: 200px;
+	color: white;
+	transition:all 0.3s;
+}
+
+form label input:hover {
+	border:1px solid  #15a51d;
+}
+
+form label input:focus {
+	border:1px solid  #75cb1d;
+}
+
+form label:first-of-type input:first-of-type {
+	border-radius: 0px 10px 10px 0px;
+}
+
+form div.controls {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+form div.controls button {
+	padding-top: 17px;
+	padding-bottom: 17px;
+	background-color: #15a51d;
+	border:1px solid white;
+	font-weight: 700;
+	font-size: 1.3em;
+	color:white;
+	border-radius: 10px 0px 0px 10px;
+	width: 140px;
+	cursor: pointer;
+	transition:all 0.3s;
+}
+
+form div.controls button:hover {
+	background-color: #75cb1d;
+}
+
