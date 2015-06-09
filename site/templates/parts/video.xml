@@ -1,0 +1,16 @@
+<document>
+
+	<h2><cms:var param="title" multilanguage="yes"/></h2>
+	<cms:module
+		name="youtube"
+		action="show"
+		id="$params['id']"
+		embed="1"
+		width="500"
+		height="333"
+		enable_api="1"
+		player_id="'player_'.$params['id']"
+		cms:eval="id,player_id"
+		/>
+
+</document>
