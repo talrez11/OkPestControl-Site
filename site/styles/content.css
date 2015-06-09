@@ -180,7 +180,7 @@ div.discount.wrap {
 
 div.video {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	text-align: center;
 	width: 50%;
 
@@ -195,7 +195,7 @@ div.video h2 {
 
 div.discount.wrap span {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	text-align: center;
 	background-image: url(../images/coupon.jpg);
 	background-repeat: no-repeat;
