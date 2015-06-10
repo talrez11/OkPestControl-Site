@@ -268,10 +268,6 @@ article.insects_article p:before {
 	transition:all 0.3s;
 }
 
-article.insects_article p:before:hover {
-
-}
-
 article.insects_article p:nth-of-type(2):before {
     background-position: -2000px 0px;
 }
@@ -370,7 +366,7 @@ div.about_article {
   vertical-align: top;
   text-align: right;
   padding-right: 20px;
-  width: 485px;
+  width: 450px;
 }
 
 div.benefits.wrap {
@@ -410,7 +406,7 @@ div.discount.wrap span {
 }
 
 form label input {
-	width: 160px;
+	width: 140px;
 }
 
 
