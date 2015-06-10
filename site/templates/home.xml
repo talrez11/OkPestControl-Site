@@ -9,6 +9,7 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+		<cms:desktop>
 			<header>
 
 				<h1><cms:text constant="header_title"/></h1>
@@ -32,6 +33,32 @@
 				</div>
 
 			</header>
+		</cms:desktop>
+
+		<cms:mobile>
+			<header>
+
+				<h1><cms:text constant="header_title"/></h1>
+				<span><cms:text constant="licence"/></span>
+				<a
+					href="'tel:'.urlencode(Language::getText('number'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="number"/>
+				</a>
+			</header>
+
+			<div class="form_wrap">
+					<h3><cms:text constant="form_title"/></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+
+				</div>
+		</cms:mobile>
 
 			<div class="about wrap">
 
