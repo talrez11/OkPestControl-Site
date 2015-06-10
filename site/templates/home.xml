@@ -101,7 +101,21 @@
 						template="parts/video.xml"
 						/>
 				</div>
+
+			<cms:desktop>
 				<span></span>
+			</cms:desktop>
+
+			<cms:mobile>
+				<a
+				href="'tel:'.urlencode(Language::getText('number'))"
+				cms:eval="href"
+				class="call"
+				>
+
+				</a>
+			</cms:mobile>
+
 			</div>
 
 			<div class="insects wrap">
@@ -121,22 +135,46 @@
 			</div>
 
 			<footer>
-				<cms:module
-					name="gallery"
-					action="show_group"
-					text_id="clients_gallery"
-					template="parts/gallery_images.xml"
+				<cms:desktop>
+					<cms:module
+						name="gallery"
+						action="show_group"
+						text_id="clients_gallery"
+						template="parts/gallery_images.xml"
 
-					/>
-				<h2><cms:text constant="header_title"/></h2>
-				<span><cms:text constant="licence"/></span>
-				<a
-					href="'tel:'.urlencode(Language::getText('number'))"
-					cms:eval="href"
-					class="phone"
-					>
-					<cms:text constant="number"/>
-				</a>
+						/>
+					<h2><cms:text constant="header_title"/></h2>
+					<span><cms:text constant="licence"/></span>
+					<a
+						href="'tel:'.urlencode(Language::getText('number'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:text constant="number"/>
+					</a>
+				</cms:desktop>
+
+				<cms:mobile>
+					<div class="image_container">
+						<cms:module
+							name="gallery"
+							action="show_group"
+							text_id="clients_gallery"
+							template="parts/gallery_images.xml"
+
+							/>
+						<h2><cms:text constant="header_title"/></h2>
+						<span><cms:text constant="licence"/></span>
+						<a
+							href="'tel:'.urlencode(Language::getText('number'))"
+							cms:eval="href"
+							class="phone"
+							>
+							<cms:text constant="number"/>
+						</a>
+					</div>
+				</cms:mobile>
+
 				<div class="form_footer">
 					<h3><cms:text constant="form_title"/></h3>
 					<cms:module
@@ -149,8 +187,6 @@
 				<div class="copyright">
 					<span><cms:text constant="copyright"/></span>
 				</div>
-
-
 			</footer>
 
 		</body>
