@@ -93,6 +93,39 @@
 					/>
 			</div>
 
+			<footer>
+				<cms:module
+					name="gallery"
+					action="show_group"
+					text_id="clients_gallery"
+					template="parts/gallery_images.xml"
+
+					/>
+				<h2><cms:text constant="header_title"/></h2>
+				<span><cms:text constant="licence"/></span>
+				<a
+					href="'tel:'.urlencode(Language::getText('number'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="number"/>
+				</a>
+				<div class="form_footer">
+					<h3><cms:text constant="form_title"/></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
+
+				<div class="copyright">
+					<span><cms:text constant="copyright"/></span>
+				</div>
+
+
+			</footer>
+
 		</body>
 	</html>
 </document>
