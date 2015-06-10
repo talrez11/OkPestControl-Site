@@ -101,7 +101,7 @@ header > span {
 div.form_wrap {
  	display: block;
  	text-align: center;
- 	background-color:#33485d;
+ 	background-color:#2b3d4f;
  }
 
 div.form_wrap h3 {
@@ -205,12 +205,10 @@ div.cetifications_article p {
 	margin-right: auto;
 	text-align: center;
 	margin-top:100px;
-	padding-top: 30px;
 	padding-bottom: 30px;
 	color: #15a51d;
 	font-weight: 700;
 	font-size: 1em;
-	border: 1px solid #bcc2c6;
 	border-radius: 10px;
 	width: 90%;
 	position: relative;
