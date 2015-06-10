@@ -41,13 +41,13 @@ header h1:before {
 	height: 243px;
 }
 
- header > span {
+header > span {
  	display: block;
  	margin-bottom: 250px;
  	width: 60%;
  	font-weight: 400;
  	font-size: 1.5em;
- }
+}
 
 div.form_wrap {
  	display: block;
