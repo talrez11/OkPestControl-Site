@@ -1,0 +1,7 @@
+<document>
+	<img
+		alt="$params['title'][$language]"
+		src="gallery::getThumbnailById($params['id'], null, 80, Thumbnail::CONSTRAIN_WIDTH)"
+		cms:eval="alt,src"
+		/>
+</document>
