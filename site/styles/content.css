@@ -349,8 +349,22 @@ article.german_tikan_article p:before {
 
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+.wrap {
+  padding: 20px calc((100vw - 1200px) / 2);
+}
+
 header {
+	display: block;
+	padding: 0px calc((100vw - 1200px) / 2);
 	padding-right: 20px;
+	background-image: url(../images/ipad-header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+	min-height: 700px;
+	text-align: right;
+	position: relative;
 }
 header h1 {
   display: block;
@@ -369,12 +383,20 @@ div.about_article {
   width: 450px;
 }
 
+div.about_article p {
+	padding-bottom: 0px;
+}
+
 div.benefits.wrap {
   background-position: -265px top;
 }
 
 article.benefits_article {
   padding: 20px 30px;
+}
+
+div.cetifications_article p {
+	margin-bottom: 20px;
 }
 
 div.discount.wrap span {
@@ -407,6 +429,8 @@ div.discount.wrap span {
 
 form label input {
 	width: 140px;
+	border:1px solid white;
+	border-radius: 0px;
 }
 
 

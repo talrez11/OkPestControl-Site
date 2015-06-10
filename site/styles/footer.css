@@ -119,6 +119,10 @@ footer {
   background-position: center 245px;
 }
 
+footer h2:first-of-type {
+	margin-top: 20px;
+}
+
 footer h2:last-of-type {
   display: block;
   margin-left: auto;
