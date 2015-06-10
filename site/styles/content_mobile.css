@@ -1,0 +1,277 @@
+/**
+ * Mobile Style Sheet
+ * Pest Control OK
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+  /*RESET*/
+
+ h1,h2,h3,h4,h5,h6,p {
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+
+ h3 {
+ 	font-size: 1.2em;
+ }
+
+  a.phone {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 40px;
+	padding-left: 20px;
+	background-color: #15a51d;
+	background-image: url(../images/phone.svg);
+	background-repeat: no-repeat;
+	background-position: 40px center;
+	background-size: 30px 30px;
+	text-decoration: none;
+	color: white;
+	font-size: 1.6em;
+	width: 200px;
+	font-weight: 700;
+	border-radius: 5px;
+	border: 1px solid white;
+	transition: all 0.3s;
+ }
+
+ a.phone:hover {
+ 	background-color: #75cb1d;
+ }
+
+header {
+	display: block;
+	background-image:url(../images/mobile-header-background.png),linear-gradient(to bottom,  #afd4de 0%,#fffdf2 100%);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size:100% auto;
+	text-align: right;
+	min-height: 402px;
+	position: relative;
+}
+
+header h1 {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.4em;
+	font-weight: 900;
+	line-height: 1.2em;
+	width: 90%;
+	position: relative;
+}
+
+header > span {
+ 	display: block;
+ 	text-align: center;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+ 	width: 80%;
+ 	font-weight: 400;
+ 	font-size: 1.2em;
+}
+
+div.form_wrap {
+ 	display: block;
+ 	text-align: center;
+ 	background-color:#33485d;
+ }
+
+div.form_wrap h3 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 80%;
+	color: white;
+}
+
+form {
+	display: block;
+	margin-bottom: 20px;
+}
+
+form label {
+	display:block;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+form label:before {
+	content: "";
+	position: absolute;
+	right: -5px;
+	top: 5px;
+	background-image: url(../images/form-icons-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: -14px center;
+	background-size: 200px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+form label:nth-of-type(2):before {
+	background-position: -64px center;
+}
+
+form label:nth-of-type(3):before {
+	background-position: -114px center;
+}
+
+form label:nth-of-type(4):before {
+	background-position: -164px center;
+}
+
+form label input {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 40px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid white;
+	width:80%;
+	color: white;
+	transition:all 0.3s;
+}
+
+form label input:focus {
+	border:1px solid  #75cb1d;
+}
+
+form div.controls {
+	display:block;
+
+}
+
+form div.controls button {
+	margin-bottom: 20px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	background-color: #15a51d;
+	border:1px solid white;
+	font-weight: 700;
+	font-size: 1.3em;
+	color:white;
+	width: 65%;
+	cursor: pointer;
+	transition:all 0.3s;
+
+}
+
+form div.controls button:hover {
+	background-color: #75cb1d;
+}
+
+ /*About Section*/
+
+div.cetifications_article {
+	display: block;
+	text-align: center;
+}
+
+div.cetifications_article p {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top:100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #15a51d;
+	font-weight: 700;
+	font-size: 1em;
+	border: 1px solid #bcc2c6;
+	border-radius: 10px;
+	width: 90%;
+	position: relative;
+}
+
+div.cetifications_article p:nth-of-type(1):before {
+	content: "";
+	position: absolute;
+	top: -90px;
+	left: 50%;
+	margin-left: -60px;
+	background-image: url(../images/irgun-madbirey-israel.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 120px 80px;
+	width: 120px;
+	height: 80px;
+}
+
+div.cetifications_article p:nth-of-type(2):before {
+	content: "";
+	position: absolute;
+	top: -90px;
+	left: 50%;
+	margin-left: -60px;
+	background-image: url(../images/haganat-hasviva.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 120px 80px;
+	width: 120px;
+	height: 80px;
+}
+
+div.cetifications_article p:nth-of-type(3):before {
+	content: "";
+	position: absolute;
+	top: -90px;
+	left: 50%;
+	margin-left: -60px;
+	background-image: url(../images/aig.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 120px 80px;
+	width: 120px;
+	height: 80px;
+}
+
+div.about_article {
+	display:block;
+	margin-top: 20px;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: right;
+}
+
+div.about_article p {
+	display: block;
+	padding-bottom: 20px;
+}
+
+div.about div.image {
+	display:block;
+	text-align: center;
+}
+
+div.about div.image figure {
+	display:block;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-image: url(../images/Free-Business-Card-Mockup.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 320px 246px;
+	width: 320px;
+	height: 246px;
+}
+
+div.about div.image span {
+	display: block;
+	font-size: 1.3em;
+}
+
