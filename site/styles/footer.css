@@ -33,6 +33,19 @@ footer h2:last-of-type {
 	position: relative;
  }
 
+ footer h2:last-of-type:before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	right: 100%;
+	background-image: url(../images/247.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 130px 130px;
+	width: 130px;
+	height: 130px;
+ }
+
 footer img {
  	display: inline-block;
  	vertical-align: top;
@@ -132,6 +145,10 @@ footer h2:last-of-type {
   line-height: 1.2em;
   width: 70%;
   position: relative;
+}
+
+footer h2:last-of-type:before {
+	right:95%;
 }
 
 }
