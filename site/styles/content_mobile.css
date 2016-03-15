@@ -220,6 +220,20 @@ div.cetifications_article p:nth-of-type(1):before {
 	top: -90px;
 	left: 50%;
 	margin-left: -60px;
+	background-image: url(../images/iso.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 160px auto;
+	width: 120px;
+	height: 80px;
+}
+
+div.cetifications_article p:nth-of-type(2):before {
+	content: "";
+	position: absolute;
+	top: -90px;
+	left: 50%;
+	margin-left: -60px;
 	background-image: url(../images/irgun-madbirey-israel.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -228,7 +242,7 @@ div.cetifications_article p:nth-of-type(1):before {
 	height: 80px;
 }
 
-div.cetifications_article p:nth-of-type(2):before {
+div.cetifications_article p:nth-of-type(3):before {
 	content: "";
 	position: absolute;
 	top: -90px;
@@ -242,7 +256,7 @@ div.cetifications_article p:nth-of-type(2):before {
 	height: 80px;
 }
 
-div.cetifications_article p:nth-of-type(3):before {
+div.cetifications_article p:nth-of-type(4):before {
 	content: "";
 	position: absolute;
 	top: -90px;
@@ -535,7 +549,7 @@ footer div.image_container {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: 100% auto;
-	min-height: 810px;
+	min-height: 870px;
  }
 
 footer div.image_container h2:first-of-type {

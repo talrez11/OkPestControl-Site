@@ -77,25 +77,32 @@ div.cetifications_article p {
 	font-size: 1em;
 	border: 1px solid #bcc2c6;
 	border-radius: 10px;
-	width: calc(345px - 40px);
+	width: calc(370px - 40px);
 	position: relative;
 }
 
 div.cetifications_article p:nth-of-type(1) {
+	background-image: url(../images/iso.jpg);
+	background-repeat: no-repeat;
+	background-position: -30px center;
+	background-size:160px auto;
+}
+
+div.cetifications_article p:nth-of-type(2) {
 	background-image: url(../images/irgun-madbirey-israel.jpg);
 	background-repeat: no-repeat;
 	background-position: 10px center;
 	background-size:120px 80px;
 }
 
-div.cetifications_article p:nth-of-type(2) {
+div.cetifications_article p:nth-of-type(3) {
 	background-image: url(../images/haganat-hasviva.jpg);
 	background-repeat: no-repeat;
 	background-position: 10px center;
 	background-size:120px 80px;
 }
 
-div.cetifications_article p:nth-of-type(3) {
+div.cetifications_article p:nth-of-type(4) {
 	background-image: url(../images/aig.jpg);
 	background-repeat: no-repeat;
 	background-position: 10px center;
