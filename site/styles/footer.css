@@ -58,8 +58,8 @@ footer img {
 
  footer > span {
 	display: block;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
  	font-weight: 400;
  	font-size: 1.5em;
  }
@@ -71,7 +71,7 @@ footer img {
 div.form_footer {
 	display: block;
 	text-align: center;
-	margin-top: 140px;
+	margin-top: 0px;
 	padding-bottom: 15px;
  }
 
